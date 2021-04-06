@@ -1,5 +1,15 @@
 {% import 'macros/timeline_macro.html' as timeline %} {% extends "base.html" %}
 {% block content %}
+<!-- <img class='background-image' src="../static/images/sasageyo-background.jpeg"/> -->
+<header>
+    <h1 class="h1header">
+        Q3 Capstone - Sasageyo! &#128304;
+    </h1>
+    <audio controls autoplay loop class="audioplayer">
+        <source src="../static/audios/sasageyo.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+</header>
 <div class="container">
     <div class="main-timeline">
         {% for time_point in time_points %}
