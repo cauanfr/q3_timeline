@@ -1,9 +1,9 @@
 {% import 'macros/timeline_macro.html' as timeline %} {% extends "base.html" %}
 {% block content %}
 <div class="container">
-  <div class="main-timeline">
-    {% for time_point in time_points %}
-    {{timeline.timeline_macro(**time_point)}} {% endfor %}
-  </div>
+    <div class="main-timeline">
+        {% for time_point in time_points %}
+        {{timeline.timeline_macro(**time_point)}} {% endfor %}
+    </div>
 </div>
 {% endblock content %}
