@@ -1,0 +1,19 @@
+{% macro timeline_macro(day_month, day_number, prop_title, description) %}
+<div class="timeline">
+  <div class="icon"></div>
+  <div class="date-content">
+    <!-- <a href="#"> -->
+    <div class="date-outer">
+      <span class="date">
+        <span class="month">{{day_month}}</span>
+        <span class="year">{{day_number}}</span>
+      </span>
+    </div>
+    <!--  </a> -->
+  </div>
+  <div class="timeline-content">
+    <h5 class="title">{{prop_title}}</h5>
+    <p class="description">{{description}}</p>
+  </div>
+</div>
+{% endmacro %}
