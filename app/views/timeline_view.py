@@ -5,6 +5,6 @@ from data.posts import time_points
 bp_timeline = Blueprint('bp_timeline', __name__)
 
 
-@bp_timeline.route('/pote3q')
+@bp_timeline.route('/pote3q') # as
 def timeline():
     return render_template('timeline.html', time_points=time_points)
